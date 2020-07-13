@@ -1,0 +1,17 @@
+﻿Build started 12/07/2020 15:58:31.
+     1>Project "C:\Users\ACER\Desktop\TR\TR\TR.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\TR.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         All outputs are up-to-date.
+       Link:
+         All outputs are up-to-date.
+         TR.vcxproj -> C:\Users\ACER\Desktop\TR\Debug\TR.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\TR.unsuccessfulbuild".
+         Touching "Debug\TR.lastbuildstate".
+     1>Done Building Project "C:\Users\ACER\Desktop\TR\TR\TR.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.05
