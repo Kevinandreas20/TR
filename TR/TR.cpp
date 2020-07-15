@@ -148,20 +148,161 @@ void tampil(void)
 	glVertex3f(-210,-120,-210);
 
 	//alas3
+	glBegin(GL_QUADS);
 	glColor3f(131/255.f, 131/255.f, 131/255.f);
 	glVertex3f(-200,-110,50);
 	glVertex3f(-200,-110,-200);
 	glVertex3f(200,-110,-200);
 	glVertex3f(200,-110,50);
+	glEnd();
 	
+	//garis alas3
+	glBegin(GL_LINES);
+	glColor3f(0,0,0);
+	glVertex3f(-180,-110,-200);
+	glVertex3f(-180,-110,50);
+	glVertex3f(-160,-110,-200);
+	glVertex3f(-160,-110,50);
+	glVertex3f(-140,-110,-200);
+	glVertex3f(-140,-110,50);
+	glVertex3f(-120,-110,-200);
+	glVertex3f(-120,-110,50);
+	glVertex3f(-100,-110,-200);
+	glVertex3f(-100,-110,50);
+	glVertex3f(-80,-110,-200);
+	glVertex3f(-80,-110,50);
+	glVertex3f(-60,-110,-200);
+	glVertex3f(-60,-110,50);
+	glVertex3f(-40,-110,-200);
+	glVertex3f(-40,-110,50);
+	glVertex3f(-20,-110,-200);
+	glVertex3f(-20,-110,50);
+	glVertex3f( 0,-110,-200);
+	glVertex3f( 0,-110,50);
+	glVertex3f( 20,-110,-200);
+	glVertex3f( 20,-110,50);
+	glVertex3f( 40,-110,-200);
+	glVertex3f( 40,-110,50);
+	glVertex3f( 60,-110,-200);
+	glVertex3f( 60,-110,50);
+	glVertex3f( 80,-110,-200);
+	glVertex3f( 80,-110,50);
+	glVertex3f( 100,-110,-200);
+	glVertex3f( 100,-110,50);
+	glVertex3f( 120,-110,-200);
+	glVertex3f( 120,-110,50);
+	glVertex3f( 140,-110,-200);
+	glVertex3f( 140,-110,50);
+	glVertex3f( 160,-110,-200);
+	glVertex3f( 160,-110,50);
+	glVertex3f( 180,-110,-200);
+	glVertex3f( 180,-110,50);
+	//mendatar
+	glVertex3f(-200,-110,-180);
+	glVertex3f( 200,-110,-180);
+	glVertex3f(-200,-110,-160);
+	glVertex3f( 200,-110,-160);
+	glVertex3f(-200,-110,-140);
+	glVertex3f( 200,-110,-140);
+	glVertex3f(-200,-110,-120);
+	glVertex3f( 200,-110,-120);
+	glVertex3f(-200,-110,-100);
+	glVertex3f( 200,-110,-100);
+	glVertex3f(-200,-110,-80);
+	glVertex3f( 200,-110,-80);
+	glVertex3f(-200,-110,-60);
+	glVertex3f( 200,-110,-60);
+	glVertex3f(-200,-110,-40);
+	glVertex3f( 200,-110,-40);
+	glVertex3f(-200,-110,-20);
+	glVertex3f( 200,-110,-20);
+	glVertex3f(-200,-110, 0);
+	glVertex3f( 200,-110, 0);
+	glVertex3f(-200,-110, 20);
+	glVertex3f( 200,-110, 20);
+	glVertex3f(-200,-110, 40);
+	glVertex3f( 200,-110, 40);
+	
+	glEnd();
+
 	//gedung1 depan
+	glBegin(GL_QUADS);
 	glColor3f(39/255.f, 116/255.f, 87/255.f);
 	glVertex3f(-50,-110,-5);
 	glVertex3f(-50,-50,-5);
 	glVertex3f(75,-50,-5);
 	glVertex3f(75,-110,-5);
-	
+	glEnd();
+
+	//pintu gedung1 depan
+	glBegin(GL_POLYGON);
+	glColor3f(0,0,0);
+	glVertex3f(-24,-110,-4);
+	glVertex3f(-24,-60,-4);
+	glVertex3f( 41,-60,-4);
+	glVertex3f( 41,-110,-4);
+
+	glEnd();
+
+	glBegin(GL_LINES);
+	glColor3f(1,1,1);
+	glVertex3f(-24, -80, -3);
+	glVertex3f(-24,-110,-3);
+	glVertex3f(-20, -110, -3);
+	glVertex3f(-20, -86, -3);
+	glVertex3f(-24,-80,-3);
+	glVertex3f(-20,-80,-3);
+	glVertex3f(-20,-80,-3);
+	glVertex3f(-20,-75,-3);
+	glVertex3f(-20, -86, -3);
+	glVertex3f(-16, -86, -3);
+	glEnd();
+
+	glBegin(GL_LINES);
+	glVertex3f(-16, -86, -3);
+	glVertex3f(-16, -80, -3);
+	glVertex3f(-20,-75,-3);
+	glVertex3f(-10,-75,-3);
+	glVertex3f(-16, -80, -3);
+	glVertex3f(-10,-80,-3);
+	glVertex3f(-10,-80,-3);
+	glVertex3f( 8,-66,-3);
+	glVertex3f(-10,-75,-3);
+	glVertex3f( 8,-60,-3);
+	//atas
+	glVertex3f( 8,-60,-3);
+	glVertex3f( 27,-75,-3);
+	//bawah
+	glVertex3f( 8,-66,-3);
+	glVertex3f( 25,-80,-3);
+	//atas
+	glVertex3f( 27,-75,-3);
+	glVertex3f( 37,-75,-3);
+	//bawah
+	glVertex3f( 25,-80,-3);
+	glVertex3f( 32,-80,-3);
+	//atas
+	glVertex3f( 37,-75,-3);
+	glVertex3f( 37,-80,-3);
+	//atas
+	glVertex3f( 37,-80,-3);
+	glVertex3f( 41,-80,-3);
+	//atas
+	glVertex3f( 41,-80,-3);
+	glVertex3f( 41,-110,-3);
+	//bwah
+	glVertex3f( 32,-80,-3);
+	glVertex3f( 32,-86,-3);
+	//bwah
+	glVertex3f( 32,-86,-3);
+	glVertex3f( 37,-86,-3);
+	//bawah
+	glVertex3f( 37,-86,-3);
+	glVertex3f( 37,-110,-3);
+	glEnd();
+
 	//gedung1 atas
+	glBegin(GL_QUADS);
 	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f(-65,-50,-20);
 	glVertex3f(-65,-50,-80);
@@ -215,12 +356,11 @@ void tampil(void)
 	glVertex3f(-75,-110,-25);
 
 	//gedung2 kiri
-	
 	glVertex3f(-130,-110,-5);
 	glVertex3f(-130, 101,-5);
 	glVertex3f(-145, 101,-25);
 	glVertex3f(-145,-110,-25);
-
+	
 	glVertex3f(-145,-110,-25);
 	glVertex3f(-145, 101,-25);
 	glVertex3f(-145, 101,-80);
@@ -282,12 +422,14 @@ void tampil(void)
 	glVertex3f(-150,111, 0);
 
 	//gedung 2 atap2 atas
+	glColor3f(0,0,0);
 	glVertex3f(-155,115,-90);
 	glVertex3f(-65 ,115,-90);
 	glVertex3f(-65, 115, 5);
 	glVertex3f(-155,115, 5);
 	
 	//gedung2 atap2 belakang
+	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f(-155,115,-90);
 	glVertex3f(-150,111,-85);
 	glVertex3f(-70,111,-85);
@@ -330,18 +472,18 @@ void tampil(void)
 	glVertex3f(	110,101,-5);
 	glVertex3f(	100, 101,-25);
 	glVertex3f(	100,-110,-25);
-	
+
 	glVertex3f( 100,101,-25);
 	glVertex3f( 100,-110,-25);
 	glVertex3f( 100,-110,-80);
 	glVertex3f( 100, 101,-80); 
 
-	//gedung3 kanan 
+	//gedung3 kanan
 	glVertex3f(150,-110,-5);
 	glVertex3f(150,101,-5);
 	glVertex3f(165, 101,-25);
 	glVertex3f(165,-110,-25);
-	
+	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f(165,-110,-25);
 	glVertex3f(165, 101,-25);
 	glVertex3f(165, 101,-80);
@@ -391,12 +533,14 @@ void tampil(void)
 	glVertex3f( 95,111, 0);
 
 	//gedung3 atap2 atas
+	glColor3f(0,0,0);
 	glVertex3f( 90,115,-90);
 	glVertex3f( 175 ,115,-90);
 	glVertex3f( 175, 115, 5);
 	glVertex3f( 90,115, 5);
 
 	//gedung3 atap2 depan
+	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f( 90,115,5);
 	glVertex3f( 95 ,111,0);
 	glVertex3f( 170, 111, 0);
@@ -426,7 +570,6 @@ void tampil(void)
 	glVertex3f(-24,-50,-10);
 	glVertex3f(-24, 115,-10);
 	glVertex3f(-49, 115,-10);
-
 	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f(-49,-50,-10);
 	glVertex3f(-62,-50,-27);
@@ -444,13 +587,13 @@ void tampil(void)
 	glVertex3f(-62,-50,-75);
 	glVertex3f(-24,-50,-75);
 	glVertex3f(-24, 115,-75);
-	
+
 	//gedung4 kanan
 	glVertex3f(-24, 115,-75);
 	glVertex3f(-24,-50,-75);
 	glVertex3f(-24,-50,-10);
 	glVertex3f(-24, 115,-10);
-	
+
 	//gedung4 atap1 bawah
 	glColor3f(0,0,0);
 	glVertex3f(-51, 115,-7);
@@ -925,6 +1068,89 @@ void tampil(void)
 	glVertex3f( 48, 119,-75);
 	glVertex3f( 48, 127,-75);
 	glEnd();
+
+	
+	//gedung6 depan ijo
+	glBegin(GL_QUADS);
+	glColor3f(39/255.f, 116/255.f, 87/255.f);
+	glVertex3f(-14,-50,-9);
+	glVertex3f(39,-50,-9);
+	glVertex3f(39,250,-9);
+	glVertex3f(-14,250,-9);
+	
+	//gedung6 depan
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-19,-50,-10);
+	glVertex3f(44,-50,-10);
+	glVertex3f(44, 300,-10);
+	glVertex3f(-19,300,-10);
+	
+	//gedung6 belakang
+	glVertex3f(-19,-50,-75);
+	glVertex3f(44,-50,-75);
+	glVertex3f(44, 300,-75);
+	glVertex3f(-19,300,-75);
+
+	//gedung6 kanan
+	glVertex3f(44,-50,-10);
+	glVertex3f(44,-50,-75);
+	glVertex3f(44, 300,-75);
+	glVertex3f(44, 300,-10);
+
+	//gedung6 kiri
+	glVertex3f(-19,-50,-10);
+	glVertex3f(-19,-50,-75);
+	glVertex3f(-19, 300,-75);
+	glVertex3f(-19, 300,-10);
+	glEnd();
+
+	//garis gedung 6 #1
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-9, 250, -8);
+	glVertex3f(-9, -50, -8);
+	glVertex3f(-4, -50, -8);
+	glVertex3f(-4, 250, -8);
+	glEnd();
+
+	//garis gedung 6 #2
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 1, 250, -8);
+	glVertex3f( 1, -50, -8);
+	glVertex3f( 6, -50, -8);
+	glVertex3f( 6, 250, -8);
+	glEnd();
+
+	//garis gedung 6 #2
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 11, 250, -8);
+	glVertex3f( 11, -50, -8);
+	glVertex3f( 16, -50, -8);
+	glVertex3f( 16, 250, -8);
+	glEnd();
+
+
+	//garis gedung 6 #2
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 21, 250, -8);
+	glVertex3f( 21, -50, -8);
+	glVertex3f( 26, -50, -8);
+	glVertex3f( 26, 250, -8);
+	glEnd();
+
+	//garis gedung 6 #2
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 31, 250, -8);
+	glVertex3f( 31, -50, -8);
+	glVertex3f( 36, -50, -8);
+	glVertex3f( 36, 250, -8);
+	glEnd();
+
+
 
 	//garis gedung2 atap1 depan
 	glLineWidth(3.0);
@@ -1461,16 +1687,222 @@ void tampil(void)
 	glVertex3f(-130,-53,-4);
 	glEnd();
 
+		
 	//garis tegak kiri gedung2
 	glBegin(GL_POLYGON);
 	glColor3f(87/255.f, 44/255.f, 0);
-	glVertex3f(-130,-47,-4);
-	glVertex3f(-95, -47,-4);
-	glVertex3f(-95, -53,-4);
-	glVertex3f(-130,-53,-4);
+	glVertex3f(-120, 101,-4);
+	glVertex3f(-120,-110,-4);
+	glVertex3f(-125,-110,-4);
+	glVertex3f(-125, 101,-4);
 	glEnd();
 
+	//garis tegak kanan gedung2
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-107, 101,-4);
+	glVertex3f(-107, -110,-4);
+	glVertex3f(-102,-110,-4);
+	glVertex3f(-102, 101,-4);
+	glEnd();
 
+	//garis mendatar atas gedung3
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(110,47,-4);
+	glVertex3f(150, 47,-4);
+	glVertex3f(150, 53,-4);
+	glVertex3f(110,53,-4);
+	
+	glEnd();
+
+	//garis tengah gedung3
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(110,-7,-4);
+	glVertex3f(150, -7,-4);
+	glVertex3f(150, -13,-4);
+	glVertex3f(110,-13,-4);
+	
+	glEnd();
+
+	//garis bawah gedung3
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(110,-47,-4);
+	glVertex3f(150, -47,-4);
+	glVertex3f(150, -53,-4);
+	glVertex3f(110,-53,-4);
+	glEnd();
+
+	//garis tegak kiri gedung3
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 120, 101,-4);
+	glVertex3f( 120,-110,-4);
+	glVertex3f( 125,-110,-4);
+	glVertex3f( 125, 101,-4);
+	glEnd();
+
+	//garis tegak kanan gedung3
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 133, 101,-4);
+	glVertex3f( 133, -110,-4);
+	glVertex3f( 138,-110,-4);
+	glVertex3f( 138, 101,-4);
+	glEnd();
+
+	//garis mendatar atas gedung4
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-49,47,-9);
+	glVertex3f(-24, 47,-9);
+	glVertex3f(-24, 53,-9);
+	glVertex3f(-49,53,-9);
+	
+	glEnd();
+
+	//garis bawah gedung4
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-49,-7,-9);
+	glVertex3f(-24, -7,-9);
+	glVertex3f(-24, -13,-9);
+	glVertex3f(-49,-13,-9);
+	glEnd();
+
+	//garis tegak kiri gedung4
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -44, 115,-9);
+	glVertex3f( -44,-50,-9);
+	glVertex3f( -39,-50,-9);
+	glVertex3f( -39, 115,-9);
+	glEnd();
+
+	//garis tegak kanan gedung4
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -34, 115,-9);
+	glVertex3f( -34, -50,-9);
+	glVertex3f( -29,-50,-9);
+	glVertex3f( -29, 115,-9);
+	glEnd();
+
+	//garis mendatar atas gedung5
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 49,47,-9);
+	glVertex3f( 74, 47,-9);
+	glVertex3f( 74, 53,-9);
+	glVertex3f( 49,53,-9);
+	
+	glEnd();
+
+	//garis bawah gedung5
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 49,-7,-9);
+	glVertex3f( 74, -7,-9);
+	glVertex3f( 74, -13,-9);
+	glVertex3f( 49,-13,-9);
+	
+	glEnd();
+
+	//garis tegak kiri gedung5
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  54, 115,-9);
+	glVertex3f(  54,-50,-9);
+	glVertex3f(  59,-50,-9);
+	glVertex3f(  59, 115,-9);
+	glEnd();
+
+	//garis tegak kanan gedung5
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  64, 115,-9);
+	glVertex3f(  64, -50,-9);
+	glVertex3f(  69,-50,-9);
+	glVertex3f(  69, 115,-9);
+	glEnd();
+
+	//garis tegak kiri gedung1
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -45, -50,-4);
+	glVertex3f( -45,-110,-4);
+	glVertex3f( -40,-110,-4);
+	glVertex3f( -40, -50,-4);
+	glEnd();
+
+	//garis tegak kanan gedung1
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -35, -50,-4);
+	glVertex3f( -35,-110,-4);
+	glVertex3f( -30,-110,-4);
+	glVertex3f( -30, -50,-4);
+	glEnd();
+
+	//garis mendatar atas gedung1
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -50,-60,-4);
+	glVertex3f( -24,-60,-4);
+	glVertex3f( -24,-66,-4);
+	glVertex3f( -50,-66,-4);
+	
+	glEnd();
+
+	//garis mendatar bawah gedung1
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( -50,-80,-4);
+	glVertex3f( -24,-80,-4);
+	glVertex3f( -24,-86,-4);
+	glVertex3f( -50,-86,-4);
+	
+	glEnd();
+
+	//garis mendatar atas gedung1 kanan pintu
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  41,-60,-4);
+	glVertex3f(  75,-60,-4);
+	glVertex3f(  75,-66,-4);
+	glVertex3f(  41,-66,-4);
+	
+	glEnd();
+
+	//garis mendatar bawah gedung1 kanan pintu
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  41,-80,-4);
+	glVertex3f(  75,-80,-4);
+	glVertex3f(  75,-86,-4);
+	glVertex3f(  41,-86,-4);
+	
+	glEnd();
+
+	//garis tegak kiri gedung1 kanan pintu
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  54, -50,-4);
+	glVertex3f(  54,-110,-4);
+	glVertex3f(  59,-110,-4);
+	glVertex3f(  59, -50,-4);
+	glEnd();
+
+	//garis tegak kanan gedung1 kanan pintu
+	glBegin(GL_POLYGON);
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(  64, -50,-4);
+	glVertex3f(  64,-110,-4);
+	glVertex3f(  69,-110,-4);
+	glVertex3f(  69, -50,-4);
+	glEnd();
 
 
 	//lineloop alas1 depan
@@ -1685,6 +2117,7 @@ void tampil(void)
 	glEnd();
 
 	//lineloop gedung4 kiri
+	glColor3f(0,0,0);
 	glBegin(GL_LINE_LOOP);
 	glVertex3f(-62, 115,-27);
 	glVertex3f(-62,-50,-27);
@@ -2448,6 +2881,266 @@ void tampil(void)
 	glVertex3f(-95, -47,-4);
 	glVertex3f(-95, -53,-4);
 	glVertex3f(-130,-53,-4);
+	glEnd();
+
+	
+	//lineloop garis tegak kiri gedung2
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-120, 101,-4);
+	glVertex3f(-120,-110,-4);
+	glVertex3f(-125,-110,-4);
+	glVertex3f(-125, 101,-4);
+	glEnd();
+
+	//lineloop garis tegak kanan gedung2
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-107, 101,-4);
+	glVertex3f(-107, -110,-4);
+	glVertex3f(-102,-110,-4);
+	glVertex3f(-102, 101,-4);
+	glEnd();
+
+	//lineloop garis mendatar atas gedung3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(110,47,-4);
+	glVertex3f(150, 47,-4);
+	glVertex3f(150, 53,-4);
+	glVertex3f(110,53,-4);
+	
+	glEnd();
+
+	//lineloop garis tengah gedung3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(110,-7,-4);
+	glVertex3f(150, -7,-4);
+	glVertex3f(150, -13,-4);
+	glVertex3f(110,-13,-4);
+	
+	glEnd();
+
+	//lineloop garis bawah gedung3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(110,-47,-4);
+	glVertex3f(150, -47,-4);
+	glVertex3f(150, -53,-4);
+	glVertex3f(110,-53,-4);
+	glEnd();
+
+	//lineloop garis tegak kiri gedung3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 120, 101,-4);
+	glVertex3f( 120,-110,-4);
+	glVertex3f( 125,-110,-4);
+	glVertex3f( 125, 101,-4);
+	glEnd();
+
+	//lineloop garis tegak kanan gedung3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 133, 101,-4);
+	glVertex3f( 133, -110,-4);
+	glVertex3f( 138,-110,-4);
+	glVertex3f( 138, 101,-4);
+	glEnd();
+
+	//lineloop garis mendatar atas gedung5
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 49,47,-9);
+	glVertex3f( 74, 47,-9);
+	glVertex3f( 74, 53,-9);
+	glVertex3f( 49,53,-9);
+	
+	glEnd();
+
+	//lineloop garis bawah gedung5
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 49,-7,-9);
+	glVertex3f( 74, -7,-9);
+	glVertex3f( 74, -13,-9);
+	glVertex3f( 49,-13,-9);
+	glEnd();
+
+	//lineloop garis tegak kiri gedung4
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -44, 115,-9);
+	glVertex3f( -44,-50,-9);
+	glVertex3f( -39,-50,-9);
+	glVertex3f( -39, 115,-9);
+	glEnd();
+
+	//lineloop garis tegak kanan gedung4
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -34, 115,-9);
+	glVertex3f( -34, -50,-9);
+	glVertex3f( -29,-50,-9);
+	glVertex3f( -29, 115,-9);
+	glEnd();
+
+	//lineloop garis tegak kiri gedung5
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  54, 115,-9);
+	glVertex3f(  54,-50,-9);
+	glVertex3f(  59,-50,-9);
+	glVertex3f(  59, 115,-9);
+	glEnd();
+
+	//lineloop garis tegak kanan gedung4
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  64, 115,-9);
+	glVertex3f(  64, -50,-9);
+	glVertex3f(  69,-50,-9);
+	glVertex3f(  69, 115,-9);
+	glEnd();
+
+	//lineloop pintu gedung1 depan
+	glColor3f(1,1,1);
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-24,-110,-4);
+	glVertex3f(-24,-60,-4);
+	glVertex3f( 41,-60,-4);
+	glVertex3f( 41,-110,-4);
+	glEnd();
+
+	//lineloop garis tegak kiri gedung1
+	glColor3f(0,0,0);
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -45, -50,-4);
+	glVertex3f( -45,-110,-4);
+	glVertex3f( -40,-110,-4);
+	glVertex3f( -40, -50,-4);
+	glEnd();
+
+	//garis tegak kanan gedung1
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -35, -50,-4);
+	glVertex3f( -35,-110,-4);
+	glVertex3f( -30,-110,-4);
+	glVertex3f( -30, -50,-4);
+	glEnd();
+
+	//garis mendatar atas gedung1
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -50,-60,-4);
+	glVertex3f( -24,-60,-4);
+	glVertex3f( -24,-66,-4);
+	glVertex3f( -50,-66,-4);
+	
+	glEnd();
+
+	//garis mendatar bawah gedung1
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( -50,-80,-4);
+	glVertex3f( -24,-80,-4);
+	glVertex3f( -24,-86,-4);
+	glVertex3f( -50,-86,-4);
+	
+	glEnd();
+
+	//lineloop garis mendatar atas gedung1 kanan pintu
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  41,-60,-4);
+	glVertex3f(  75,-60,-4);
+	glVertex3f(  75,-66,-4);
+	glVertex3f(  41,-66,-4);
+	
+	glEnd();
+
+	//lineloop garis mendatar bawah gedung1 kanan pintu
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  41,-80,-4);
+	glVertex3f(  75,-80,-4);
+	glVertex3f(  75,-86,-4);
+	glVertex3f(  41,-86,-4);
+	
+	glEnd();
+
+	//lineloop garis tegak kiri gedung1 kanan pintu
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  54, -50,-4);
+	glVertex3f(  54,-110,-4);
+	glVertex3f(  59,-110,-4);
+	glVertex3f(  59, -50,-4);
+	glEnd();
+
+	//lineloop garis tegak kanan gedung1 kanan pintu
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(  64, -50,-4);
+	glVertex3f(  64,-110,-4);
+	glVertex3f(  69,-110,-4);
+	glVertex3f(  69, -50,-4);
+	glEnd();
+
+	//lineloop gedung6 depan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-19,-50,-10);
+	glVertex3f(44,-50,-10);
+	glVertex3f(44, 300,-10);
+	glVertex3f(-19,300,-10);
+	glEnd();
+
+	//lineloop gedung6 belakang
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-19,-50,-75);
+	glVertex3f(44,-50,-75);
+	glVertex3f(44, 300,-75);
+	glVertex3f(-19,300,-75);
+	glEnd();
+
+	//lineloop gedung6 kanan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(44,-50,-10);
+	glVertex3f(44,-50,-75);
+	glVertex3f(44, 300,-75);
+	glVertex3f(44, 300,-10);
+	glEnd();
+
+	//lineloop gedung6 kiri
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-19,-50,-10);
+	glVertex3f(-19,-50,-75);
+	glVertex3f(-19, 300,-75);
+	glVertex3f(-19, 300,-10);
+	glEnd();
+
+	//lineloop garis gedung 6 #1
+	glBegin(GL_LINE_LOOP);
+	glColor3f(0,0,0);
+	glVertex3f(-9, 250, -8);
+	glVertex3f(-9, -50, -8);
+	glVertex3f(-4, -50, -8);
+	glVertex3f(-4, 250, -8);
+	glEnd();
+
+	//lineloop garis gedung 6 #2
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 1, 250, -8);
+	glVertex3f( 1, -50, -8);
+	glVertex3f( 6, -50, -8);
+	glVertex3f( 6, 250, -8);
+	glEnd();
+
+	//lineloop garis gedung 6 #3
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 11, 250, -8);
+	glVertex3f( 11, -50, -8);
+	glVertex3f( 16, -50, -8);
+	glVertex3f( 16, 250, -8);
+	glEnd();
+
+
+	//lineloop garis gedung 6 #4
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 21, 250, -8);
+	glVertex3f( 21, -50, -8);
+	glVertex3f( 26, -50, -8);
+	glVertex3f( 26, 250, -8);
+	glEnd();
+
+	//lineloop garis gedung 6 #5
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 31, 250, -8);
+	glVertex3f( 31, -50, -8);
+	glVertex3f( 36, -50, -8);
+	glVertex3f( 36, 250, -8);
 	glEnd();
 
 
