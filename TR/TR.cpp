@@ -11,7 +11,8 @@ void idle();
 void mouse(int button, int state, int x, int y);
 void mouseMotion(int x, int y);
 bool mouseDown = false;
-int is_depth,x,y,z;
+int is_depth;
+int x,y,z;
 int i;
 float xrot = 0.0f;
 float yrot = 0.0f;
@@ -420,8 +421,167 @@ void tampil(void)
 	glVertex3f(-145, 101,-80);
 	glVertex3f(-145,-110,-80);
 
+	//kursi sendehan belakang 
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-143, -98, -70);
+	//kursi sendehan depan
+	glVertex3f(-141, -98, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -98, -70);
+	//kursi sendehan kanan
+	glVertex3f(-143, -98, -70);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -98, -70);
+	//kursi sendehan kiri
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-141, -98, -40);
+	//kursi sendehan atas
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -98, -70);
+	glVertex3f(-141, -98, -70);
+	glVertex3f(-141, -98, -40);
+	//kursi sendehan bawah
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -105, -40);
 	
+	//kursi alas bawah
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-141, -105, -70);
+	
+	//kursi alas atas
+	glVertex3f(-141, -103, -40);
+	glVertex3f(-136, -103, -40);
+	glVertex3f(-136, -103, -70);
+	glVertex3f(-141, -103, -70);
+	
+	//kursi alas depan
+	glVertex3f(-136, -103, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-136, -103, -70);
+	
+	//kursi alas kiri
+	glVertex3f(-141, -103, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -103, -40);
+	
+	//kursi alas kanan
+	glVertex3f(-141, -103, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-136, -103, -70);
+
+	//kaki kursi kiri#1 
+	glVertex3f(-143, -105, -41);
+	glVertex3f(-143, -110, -41);
+	glVertex3f(-142, -110, -41);
+	glVertex3f(-142, -105, -41);
+
+	//kaki kursi kanan#1 
+	glVertex3f(-143, -105, -42);
+	glVertex3f(-143, -110, -42);
+	glVertex3f(-142, -110, -42);
+	glVertex3f(-142, -105, -42);
+
+	//kaki kursi depan#1 
+	glVertex3f(-142, -105, -41);
+	glVertex3f(-142, -110, -41);
+	glVertex3f(-142, -110, -42);
+	glVertex3f(-142, -105, -42);
+
+	//kaki kursi belakang#1 
+	glVertex3f(-143, -105, -41);
+	glVertex3f(-143, -110, -41);
+	glVertex3f(-143, -110, -42);
+	glVertex3f(-143, -105, -42);
+
+	//kaki kursi kiri#2 
+	glVertex3f(-143, -105, -68);
+	glVertex3f(-143, -110, -68);
+	glVertex3f(-142, -110, -68);
+	glVertex3f(-142, -105, -68);
+
+	//kaki kursi kanan#2 
+	glVertex3f(-143, -105, -69);
+	glVertex3f(-143, -110, -69);
+	glVertex3f(-142, -110, -69);
+	glVertex3f(-142, -105, -69);
+
+	//kaki kursi depan#2 
+	glVertex3f(-142, -105, -68);
+	glVertex3f(-142, -110, -68);
+	glVertex3f(-142, -110, -69);
+	glVertex3f(-142, -105, -69);
+
+	//kaki kursi belakang#2 
+	glVertex3f(-143, -105, -68);
+	glVertex3f(-143, -110, -68);
+	glVertex3f(-143, -110, -69);
+	glVertex3f(-143, -105, -69);
+
+	//kaki kursi kiri#3 
+	glVertex3f(-137, -105, -68);
+	glVertex3f(-137, -110, -68);
+	glVertex3f(-136, -110, -68);
+	glVertex3f(-136, -105, -68);
+
+	//kaki kursi depan#3 
+	glVertex3f(-136, -105, -68);
+	glVertex3f(-136, -110, -68);
+	glVertex3f(-136, -110, -69);
+	glVertex3f(-136, -105, -69);
+
+	//kaki kursi belakang#3 
+	glVertex3f(-137, -105, -68);
+	glVertex3f(-137, -110, -68);
+	glVertex3f(-137, -110, -69);
+	glVertex3f(-137, -105, -69);
+
+	//kaki kursi kanan#3 
+	glVertex3f(-137, -105, -69);
+	glVertex3f(-137, -110, -69);
+	glVertex3f(-136, -110, -69);
+	glVertex3f(-136, -105, -69);
+
+	//kaki kursi kiri#4 
+	glVertex3f(-137, -105, -41);
+	glVertex3f(-137, -110, -41);
+	glVertex3f(-136, -110, -41);
+	glVertex3f(-136, -105, -41);
+
+	//kaki kursi kanan#4 
+	glVertex3f(-137, -105, -42);
+	glVertex3f(-137, -110, -42);
+	glVertex3f(-136, -110, -42);
+	glVertex3f(-136, -105, -42);
+
+	//kaki kursi belakang#4 
+	glVertex3f(-137, -105, -41);
+	glVertex3f(-137, -110, -41);
+	glVertex3f(-137, -110, -42);
+	glVertex3f(-137, -105, -42);
+
+	//kaki kursi depan#4 
+	glVertex3f(-136, -105, -41);
+	glVertex3f(-136, -110, -41);
+	glVertex3f(-136, -110, -42);
+	glVertex3f(-136, -105, -42);
+
+
 	//gedung2 kanan
+	glColor3f(111/255.f, 111/255.f,0);
 	glVertex3f(-75, 101,-80);
 	glVertex3f(-75,-110,-80);
 	glVertex3f(-75,-110,-25);
@@ -574,32 +734,192 @@ void tampil(void)
 	glVertex3f(165, 101,-79);
 	glVertex3f(165,-110,-79);
 	
-	//meja gedung3 kiri
+	//meja gedung3 kiri 
 	glColor3f(87/255.f, 44/255.f, 0);
 	glVertex3f( 120,-95,-79);
 	glVertex3f( 120,-110,-79);
 	glVertex3f( 120,-110,-70);
 	glVertex3f( 120,-95,-70);
 
-	//meja gedung2 kanan
+	//meja gedung3 kanan
 	glVertex3f( 145,-95,-79);
 	glVertex3f( 145,-110,-79);
 	glVertex3f( 145,-110,-70);
 	glVertex3f( 145,-95,-70);
 
-	//meja gedung2 samping kiri
+	//kursi sendehan belakang 
+	glColor3f(87/255.f, 44/255.f, 0);
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 102, -98, -70);
+	//kursi sendehan depan
+	glVertex3f( 104, -98, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -98, -70);
+	//kursi sendehan kanan
+	glVertex3f( 102, -98, -70);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -98, -70);
+	//kursi sendehan kiri
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 104, -98, -40);
+	//kursi sendehan atas
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -98, -70);
+	glVertex3f( 104, -98, -70);
+	glVertex3f( 104, -98, -40);
+	//kursi sendehan bawah
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -105, -40);
+
+	//kursi alas bawah
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 104, -105, -70);
+	
+	//kursi alas atas
+	glVertex3f( 104, -103, -40);
+	glVertex3f( 109, -103, -40);
+	glVertex3f( 109, -103, -70);
+	glVertex3f( 104, -103, -70);
+	
+	//kursi alas depan
+	glVertex3f( 109, -103, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 109, -103, -70);
+	
+	//kursi alas kiri
+	glVertex3f( 104, -103, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -103, -40);
+	
+	//kursi alas kanan
+	glVertex3f( 104, -103, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 109, -103, -70);
+
+	//kaki kursi kiri#1 
+	glVertex3f( 102, -105, -41);
+	glVertex3f( 102, -110, -41);
+	glVertex3f( 103, -110, -41);
+	glVertex3f( 103, -105, -41);
+
+	//kaki kursi kanan#1 
+	glVertex3f( 102, -105, -42);
+	glVertex3f( 102, -110, -42);
+	glVertex3f( 103, -110, -42);
+	glVertex3f( 103, -105, -42);
+
+	//kaki kursi depan#1 
+	glVertex3f( 103, -105, -41);
+	glVertex3f( 103, -110, -41);
+	glVertex3f( 103, -110, -42);
+	glVertex3f( 103, -105, -42);
+
+	//kaki kursi belakang#1 
+	glVertex3f( 102, -105, -41);
+	glVertex3f( 102, -110, -41);
+	glVertex3f( 102, -110, -42);
+	glVertex3f( 102, -105, -42);
+
+	//kaki kursi kiri#2 
+	glVertex3f( 102, -105, -68);
+	glVertex3f( 102, -110, -68);
+	glVertex3f( 103, -110, -68);
+	glVertex3f( 103, -105, -68);
+
+	//kaki kursi kanan#2 
+	glVertex3f( 102, -105, -69);
+	glVertex3f( 102, -110, -69);
+	glVertex3f( 103, -110, -69);
+	glVertex3f( 103, -105, -69);
+
+	//kaki kursi depan#2 
+	glVertex3f( 103, -105, -68);
+	glVertex3f( 103, -110, -68);
+	glVertex3f( 103, -110, -69);
+	glVertex3f( 103, -105, -69);
+
+	//kaki kursi belakang#2 
+	glVertex3f( 102, -105, -68);
+	glVertex3f( 102, -110, -68);
+	glVertex3f( 102, -110, -69);
+	glVertex3f( 102, -105, -69);
+
+	//kaki kursi kiri#3 
+	glVertex3f( 108, -105, -68);
+	glVertex3f( 108, -110, -68);
+	glVertex3f( 109, -110, -68);
+	glVertex3f( 109, -105, -68);
+
+	//kaki kursi depan#3 
+	glVertex3f( 109, -105, -68);
+	glVertex3f( 109, -110, -68);
+	glVertex3f( 109, -110, -69);
+	glVertex3f( 109, -105, -69);
+
+	//kaki kursi belakang#3 
+	glVertex3f( 108, -105, -68);
+	glVertex3f( 108, -110, -68);
+	glVertex3f( 108, -110, -69);
+	glVertex3f( 108, -105, -69);
+
+	//kaki kursi kanan#3 
+	glVertex3f( 108, -105, -69);
+	glVertex3f( 108, -110, -69);
+	glVertex3f( 109, -110, -69);
+	glVertex3f( 109, -105, -69);
+
+	//kaki kursi kiri#4 
+	glVertex3f( 108, -105, -41);
+	glVertex3f( 108, -110, -41);
+	glVertex3f (109, -110, -41);
+	glVertex3f( 109, -105, -41);
+
+	//kaki kursi kanan#4 
+	glVertex3f( 108, -105, -42);
+	glVertex3f( 108, -110, -42);
+	glVertex3f( 109, -110, -42);
+	glVertex3f( 109, -105, -42);
+
+	//kaki kursi belakang#4 
+	glVertex3f( 108, -105, -41);
+	glVertex3f( 108, -110, -41);
+	glVertex3f( 108, -110, -42);
+	glVertex3f( 108, -105, -42);
+
+	//kaki kursi depan#4 
+	glVertex3f( 109, -105, -41);
+	glVertex3f( 109, -110, -41);
+	glVertex3f( 109, -110, -42);
+	glVertex3f( 109, -105, -42);
+
+
+
+	//meja gedung3 samping kiri
 	glVertex3f( 120,-95,-70);
 	glVertex3f( 120,-110,-70);
 	glVertex3f( 125,-110,-65);
 	glVertex3f( 125,-95,-65);
 
-	//meja gedung2 samping kanan
+	//meja gedung3 samping kanan
 	glVertex3f( 145,-95,-70);
 	glVertex3f( 145,-110,-70);
 	glVertex3f( 140,-110,-65);
 	glVertex3f( 140,-95,-65);
 
-	//meja gedung2 depan
+	//meja gedung3 depan
 	glVertex3f( 125,-95,-65);
 	glVertex3f( 125,-110,-65);
 	glVertex3f( 140,-110,-65);
@@ -3869,6 +4189,438 @@ void tampil(void)
 	glVertex3f( 125,-110,-65);
 	glVertex3f( 140,-110,-65);
 	glVertex3f( 140,-95,-65);
+	glEnd();
+
+	//lineloop kursi sendehan belakang 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-143, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan depan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-141, -98, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan kanan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -98, -70);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan kiri
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-141, -98, -40);
+	glEnd();
+
+	//lineloop kursi sendehan atas
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -98, -40);
+	glVertex3f(-143, -98, -70);
+	glVertex3f(-141, -98, -70);
+	glVertex3f(-141, -98, -40);
+	glEnd();
+
+	//lineloop kursi sendehan bawah
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -40);
+	glVertex3f(-143, -105, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-141, -105, -40);
+	glEnd();
+
+	//lineloop kursi alas bawah
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-141, -105, -70);
+	glEnd();
+
+	//lineloop kursi alas atas
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-141, -103, -40);
+	glVertex3f(-136, -103, -40);
+	glVertex3f(-136, -103, -70);
+	glVertex3f(-141, -103, -70);
+	glEnd();
+
+	//lineloop kursi alas depan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-136, -103, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-136, -103, -70);
+	glEnd();
+
+	//lineloop kursi alas kiri
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-141, -103, -40);
+	glVertex3f(-141, -105, -40);
+	glVertex3f(-136, -105, -40);
+	glVertex3f(-136, -103, -40);
+	glEnd();
+
+	//lineloop kursi alas kanan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-141, -103, -70);
+	glVertex3f(-141, -105, -70);
+	glVertex3f(-136, -105, -70);
+	glVertex3f(-136, -103, -70);
+	glEnd();
+	
+	//lineloop kaki kursi kiri#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -41);
+	glVertex3f(-143, -110, -41);
+	glVertex3f(-142, -110, -41);
+	glVertex3f(-142, -105, -41);
+	glEnd();
+
+	//lineloop kaki kursi kanan#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -42);
+	glVertex3f(-143, -110, -42);
+	glVertex3f(-142, -110, -42);
+	glVertex3f(-142, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi depan#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-142, -105, -41);
+	glVertex3f(-142, -110, -41);
+	glVertex3f(-142, -110, -42);
+	glVertex3f(-142, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi belakang#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -41);
+	glVertex3f(-143, -110, -41);
+	glVertex3f(-143, -110, -42);
+	glVertex3f(-143, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi kiri#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -68);
+	glVertex3f(-143, -110, -68);
+	glVertex3f(-142, -110, -68);
+	glVertex3f(-142, -105, -68);
+	glEnd();
+
+	//lineloop kaki kursi kanan#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -69);
+	glVertex3f(-143, -110, -69);
+	glVertex3f(-142, -110, -69);
+	glVertex3f(-142, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi depan#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-142, -105, -68);
+	glVertex3f(-142, -110, -68);
+	glVertex3f(-142, -110, -69);
+	glVertex3f(-142, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi belakang#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-143, -105, -68);
+	glVertex3f(-143, -110, -68);
+	glVertex3f(-143, -110, -69);
+	glVertex3f(-143, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kiri#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -68);
+	glVertex3f(-137, -110, -68);
+	glVertex3f(-136, -110, -68);
+	glVertex3f(-136, -105, -68);
+	glEnd();
+
+	//lineloop kaki kursi depan#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-136, -105, -68);
+	glVertex3f(-136, -110, -68);
+	glVertex3f(-136, -110, -69);
+	glVertex3f(-136, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi belakang#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -68);
+	glVertex3f(-137, -110, -68);
+	glVertex3f(-137, -110, -69);
+	glVertex3f(-137, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kanan#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -69);
+	glVertex3f(-137, -110, -69);
+	glVertex3f(-136, -110, -69);
+	glVertex3f(-136, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kiri#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -41);
+	glVertex3f(-137, -110, -41);
+	glVertex3f(-136, -110, -41);
+	glVertex3f(-136, -105, -41);
+	glEnd();
+
+	//lineloop kaki kursi kanan#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -42);
+	glVertex3f(-137, -110, -42);
+	glVertex3f(-136, -110, -42);
+	glVertex3f(-136, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi belakang#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-137, -105, -41);
+	glVertex3f(-137, -110, -41);
+	glVertex3f(-137, -110, -42);
+	glVertex3f(-137, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi depan#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f(-136, -105, -41);
+	glVertex3f(-136, -110, -41);
+	glVertex3f(-136, -110, -42);
+	glVertex3f(-136, -105, -42);
+	glEnd();
+
+	//lineloop kursi sendehan belakang 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 102, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan depan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 104, -98, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan kanan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -98, -70);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -98, -70);
+	glEnd();
+
+	//lineloop kursi sendehan kiri
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 104, -98, -40);
+	glEnd();
+
+	//lineloop kursi sendehan atas
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -98, -40);
+	glVertex3f( 102, -98, -70);
+	glVertex3f( 104, -98, -70);
+	glVertex3f( 104, -98, -40);
+	glEnd();
+
+	//lineloop kursi sendehan bawah
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -40);
+	glVertex3f( 102, -105, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 104, -105, -40);
+	glEnd();
+
+	//lineloop kursi alas bawah
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 104, -105, -70);
+	glEnd();
+
+	//lineloop kursi alas atas
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 104, -103, -40);
+	glVertex3f( 109, -103, -40);
+	glVertex3f( 109, -103, -70);
+	glVertex3f( 104, -103, -70);
+	glEnd();
+
+	//lineloop kursi alas depan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 109, -103, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 109, -103, -70);
+	glEnd();
+
+	//lineloop kursi alas kiri
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 104, -103, -40);
+	glVertex3f( 104, -105, -40);
+	glVertex3f( 109, -105, -40);
+	glVertex3f( 109, -103, -40);
+	glEnd();
+
+	//lineloop kursi alas kanan
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 104, -103, -70);
+	glVertex3f( 104, -105, -70);
+	glVertex3f( 109, -105, -70);
+	glVertex3f( 109, -103, -70);
+	glEnd();
+
+	//lineloop kaki kursi kiri#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -41);
+	glVertex3f( 102, -110, -41);
+	glVertex3f( 103, -110, -41);
+	glVertex3f( 103, -105, -41);
+	glEnd();
+
+	//lineloop kaki kursi kanan#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -42);
+	glVertex3f( 102, -110, -42);
+	glVertex3f( 103, -110, -42);
+	glVertex3f( 103, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi depan#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 103, -105, -41);
+	glVertex3f( 103, -110, -41);
+	glVertex3f( 103, -110, -42);
+	glVertex3f( 103, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi belakang#1 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -41);
+	glVertex3f( 102, -110, -41);
+	glVertex3f( 102, -110, -42);
+	glVertex3f( 102, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi kiri#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -68);
+	glVertex3f( 102, -110, -68);
+	glVertex3f( 103, -110, -68);
+	glVertex3f( 103, -105, -68);
+	glEnd();
+
+	//lineloop kaki kursi kanan#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -69);
+	glVertex3f( 102, -110, -69);
+	glVertex3f( 103, -110, -69);
+	glVertex3f( 103, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi depan#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 103, -105, -68);
+	glVertex3f( 103, -110, -68);
+	glVertex3f( 103, -110, -69);
+	glVertex3f( 103, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi belakang#2 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 102, -105, -68);
+	glVertex3f( 102, -110, -68);
+	glVertex3f( 102, -110, -69);
+	glVertex3f( 102, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kiri#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -68);
+	glVertex3f( 108, -110, -68);
+	glVertex3f( 109, -110, -68);
+	glVertex3f( 109, -105, -68);
+	glEnd();
+
+	//lineloop kaki kursi depan#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 109, -105, -68);
+	glVertex3f( 109, -110, -68);
+	glVertex3f( 109, -110, -69);
+	glVertex3f( 109, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi belakang#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -68);
+	glVertex3f( 108, -110, -68);
+	glVertex3f( 108, -110, -69);
+	glVertex3f( 108, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kanan#3 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -69);
+	glVertex3f( 108, -110, -69);
+	glVertex3f( 109, -110, -69);
+	glVertex3f( 109, -105, -69);
+	glEnd();
+
+	//lineloop kaki kursi kiri#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -41);
+	glVertex3f( 108, -110, -41);
+	glVertex3f (109, -110, -41);
+	glVertex3f( 109, -105, -41);
+	glEnd();
+
+	//lineloop kaki kursi kanan#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -42);
+	glVertex3f( 108, -110, -42);
+	glVertex3f( 109, -110, -42);
+	glVertex3f( 109, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi belakang#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 108, -105, -41);
+	glVertex3f( 108, -110, -41);
+	glVertex3f( 108, -110, -42);
+	glVertex3f( 108, -105, -42);
+	glEnd();
+
+	//lineloop kaki kursi depan#4 
+	glBegin(GL_LINE_LOOP);
+	glVertex3f( 109, -105, -41);
+	glVertex3f( 109, -110, -41);
+	glVertex3f( 109, -110, -42);
+	glVertex3f( 109, -105, -42);
 	glEnd();
 
 
